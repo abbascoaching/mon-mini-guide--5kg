@@ -3,48 +3,69 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon mini-guide -5 kilos | Abbas Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <title>Mini-guide -5 kilos | Abbas Coaching</title>
   <style>
     * { box-sizing: border-box; }
     html, body {
       margin: 0;
-      height: 100%;
+      padding: 0;
+      min-height: 100%;
       font-family: Arial, sans-serif;
       background: #111;
-      color: white;
+      color: #fff;
     }
     header {
+      padding: 16px 12px;
+      text-align: center;
+      border-bottom: 2px solid #ef4444;
+      font-weight: bold;
+    }
+    header span { color: #ef4444; }
+    .actions {
       padding: 14px;
       text-align: center;
-      background: #171717;
-      border-bottom: 2px solid #ef4444;
     }
-    header strong { color: #ef4444; }
-    main { height: calc(100% - 58px); }
-    iframe {
+    .actions a {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #ef4444;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .viewer {
       width: 100%;
-      height: 100%;
+      height: 80vh;
+      min-height: 600px;
       border: 0;
       display: block;
       background: #222;
     }
-    .fallback {
-      padding: 20px;
-      text-align: center;
+    @media (max-width: 600px) {
+      .viewer {
+        height: 75vh;
+        min-height: 650px;
+      }
     }
-    a { color: #ff7777; }
   </style>
 </head>
 <body>
-  <header>
-    <strong>ABBAS COACHING</strong> — Ton mini-guide -5 kilos
-  </header>
-  <main>
-    <iframe
-      src="./MON%20MINI%20GUIDE%20-5%20KILOS%20abbas.coaching.pdf.pdf"
-      title="Mini-guide -5 kilos">
-    </iframe>
-  </main>
+  <header><span>ABBAS COACHING</span> — MINI-GUIDE -5 KILOS</header>
+
+  <div class="actions">
+    <a href="./MON%20MINI%20GUIDE%20-5%20KILOS%20abbas.coaching.pdf.pdf"
+       target="_blank" rel="noopener">
+      Ouvrir le PDF complet
+    </a>
+  </div>
+
+  <iframe
+    class="viewer"
+    src="./MON%20MINI%20GUIDE%20-5%20KILOS%20abbas.coaching.pdf.pdf#view=FitH"
+    title="Mini-guide complet Abbas Coaching">
+  </iframe>
 </body>
 </html>
